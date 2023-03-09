@@ -1,0 +1,6 @@
+framework module GJJson {
+  umbrella header "GJJson-umbrella.h"
+
+  export *
+  module * { export * }
+}

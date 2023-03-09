@@ -1,0 +1,16 @@
+PODS:
+  - GJJson (0.1.0)
+
+DEPENDENCIES:
+  - GJJson (from `../`)
+
+EXTERNAL SOURCES:
+  GJJson:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GJJson: 33e6cc272395309c4b82aba6cc5735fca4b3eeed
+
+PODFILE CHECKSUM: 66c21f0a04d80d6f26644ac21bd21cadfa06bc9e
+
+COCOAPODS: 1.12.0

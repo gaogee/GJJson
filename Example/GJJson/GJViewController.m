@@ -7,7 +7,8 @@
 //
 
 #import "GJViewController.h"
-
+#import "GJJson.h"
+#import "GJTestModel.h"
 @interface GJViewController ()
 
 @end
@@ -17,6 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    GJTestModel *model = [[GJTestModel alloc] init];
+    model.name = @"张杰";
+    model.userId = 002;
+    NSDictionary *params = [model gj_JSONObject];
+    NSLog(@"%@",params);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

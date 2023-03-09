@@ -24,6 +24,17 @@
 		7FB32EC28A8BDAFCEDDA51A0 /* Pods_GJJson_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AEDFCAAB6B908CAE49752D /* Pods_GJJson_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C4BB59889845A20797AF19A5 /* Pods_GJJson_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E22A5E981DB81F166AC0AFC /* Pods_GJJson_Tests.framework */; };
+		E8313F3729B998EC00A549FD /* GJTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F3629B998EC00A549FD /* GJTestModel.m */; };
+		E88DE18229B9B275009D3D29 /* GJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F3329B998B500A549FD /* GJFoundation.m */; };
+		E88DE18329B9B27A009D3D29 /* GJJsonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2729B998B400A549FD /* GJJsonConst.m */; };
+		E88DE18429B9B27D009D3D29 /* GJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2229B998B400A549FD /* GJProperty.m */; };
+		E88DE18529B9B281009D3D29 /* GJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2429B998B400A549FD /* GJPropertyKey.m */; };
+		E88DE18629B9B284009D3D29 /* GJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2129B998B400A549FD /* GJPropertyType.m */; };
+		E88DE18729B9B287009D3D29 /* NSObject+GJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F3029B998B400A549FD /* NSObject+GJClass.m */; };
+		E88DE18829B9B28B009D3D29 /* NSObject+GJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2D29B998B400A549FD /* NSObject+GJCoding.m */; };
+		E88DE18929B9B28E009D3D29 /* NSObject+GJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2E29B998B400A549FD /* NSObject+GJKeyValue.m */; };
+		E88DE18A29B9B291009D3D29 /* NSObject+GJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2029B998B400A549FD /* NSObject+GJProperty.m */; };
+		E88DE18B29B9B295009D3D29 /* NSString+GJJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E8313F2329B998B400A549FD /* NSString+GJJson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A749C80127043A5961E0485 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1A749C80127043A5961E0485 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1F3DC4AD5512C02EA30DD5EE /* Pods-GJJson_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJson_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GJJson_Tests/Pods-GJJson_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29B73152034C60C8B573CD63 /* Pods-GJJson_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJson_Tests.release.xcconfig"; path = "Target Support Files/Pods-GJJson_Tests/Pods-GJJson_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		37AEDFCAAB6B908CAE49752D /* Pods_GJJson_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJJson_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +76,31 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BAA091D43A9B116CFBC5FBC /* Pods-GJJson_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJson_Example.release.xcconfig"; path = "Target Support Files/Pods-GJJson_Example/Pods-GJJson_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9CDA317FE1261A716AC3A663 /* Pods-GJJson_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJson_Example.debug.xcconfig"; path = "Target Support Files/Pods-GJJson_Example/Pods-GJJson_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CA2D4C1122320E3DB51A6374 /* GJJson.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GJJson.podspec; path = ../GJJson.podspec; sourceTree = "<group>"; };
-		E6CBC93E38EE7863639715D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CA2D4C1122320E3DB51A6374 /* GJJson.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GJJson.podspec; path = ../GJJson.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E6CBC93E38EE7863639715D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E8313F2029B998B400A549FD /* NSObject+GJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GJProperty.m"; path = "../GJJson/Classes/NSObject+GJProperty.m"; sourceTree = "<group>"; };
+		E8313F2129B998B400A549FD /* GJPropertyType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GJPropertyType.m; path = ../GJJson/Classes/GJPropertyType.m; sourceTree = "<group>"; };
+		E8313F2229B998B400A549FD /* GJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GJProperty.m; path = ../GJJson/Classes/GJProperty.m; sourceTree = "<group>"; };
+		E8313F2329B998B400A549FD /* NSString+GJJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+GJJson.m"; path = "../GJJson/Classes/NSString+GJJson.m"; sourceTree = "<group>"; };
+		E8313F2429B998B400A549FD /* GJPropertyKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GJPropertyKey.m; path = ../GJJson/Classes/GJPropertyKey.m; sourceTree = "<group>"; };
+		E8313F2529B998B400A549FD /* NSObject+GJCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+GJCoding.h"; path = "../GJJson/Classes/NSObject+GJCoding.h"; sourceTree = "<group>"; };
+		E8313F2629B998B400A549FD /* GJJsonConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJJsonConst.h; path = ../GJJson/Classes/GJJsonConst.h; sourceTree = "<group>"; };
+		E8313F2729B998B400A549FD /* GJJsonConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GJJsonConst.m; path = ../GJJson/Classes/GJJsonConst.m; sourceTree = "<group>"; };
+		E8313F2829B998B400A549FD /* NSObject+GJProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+GJProperty.h"; path = "../GJJson/Classes/NSObject+GJProperty.h"; sourceTree = "<group>"; };
+		E8313F2929B998B400A549FD /* NSString+GJJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+GJJson.h"; path = "../GJJson/Classes/NSString+GJJson.h"; sourceTree = "<group>"; };
+		E8313F2A29B998B400A549FD /* GJJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJJson.h; path = ../GJJson/Classes/GJJson.h; sourceTree = "<group>"; };
+		E8313F2B29B998B400A549FD /* GJPropertyKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJPropertyKey.h; path = ../GJJson/Classes/GJPropertyKey.h; sourceTree = "<group>"; };
+		E8313F2C29B998B400A549FD /* NSObject+GJClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+GJClass.h"; path = "../GJJson/Classes/NSObject+GJClass.h"; sourceTree = "<group>"; };
+		E8313F2D29B998B400A549FD /* NSObject+GJCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GJCoding.m"; path = "../GJJson/Classes/NSObject+GJCoding.m"; sourceTree = "<group>"; };
+		E8313F2E29B998B400A549FD /* NSObject+GJKeyValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GJKeyValue.m"; path = "../GJJson/Classes/NSObject+GJKeyValue.m"; sourceTree = "<group>"; };
+		E8313F2F29B998B400A549FD /* NSObject+GJKeyValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+GJKeyValue.h"; path = "../GJJson/Classes/NSObject+GJKeyValue.h"; sourceTree = "<group>"; };
+		E8313F3029B998B400A549FD /* NSObject+GJClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+GJClass.m"; path = "../GJJson/Classes/NSObject+GJClass.m"; sourceTree = "<group>"; };
+		E8313F3129B998B400A549FD /* GJProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJProperty.h; path = ../GJJson/Classes/GJProperty.h; sourceTree = "<group>"; };
+		E8313F3229B998B500A549FD /* GJPropertyType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJPropertyType.h; path = ../GJJson/Classes/GJPropertyType.h; sourceTree = "<group>"; };
+		E8313F3329B998B500A549FD /* GJFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GJFoundation.m; path = ../GJJson/Classes/GJFoundation.m; sourceTree = "<group>"; };
+		E8313F3429B998B500A549FD /* GJFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GJFoundation.h; path = ../GJJson/Classes/GJFoundation.h; sourceTree = "<group>"; };
+		E8313F3529B998EC00A549FD /* GJTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJTestModel.h; sourceTree = "<group>"; };
+		E8313F3629B998EC00A549FD /* GJTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJTestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +171,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* GJViewController.h */,
 				6003F5A6195388D20070C39A /* GJViewController.m */,
+				E8313F3529B998EC00A549FD /* GJTestModel.h */,
+				E8313F3629B998EC00A549FD /* GJTestModel.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -179,6 +215,27 @@
 			isa = PBXGroup;
 			children = (
 				CA2D4C1122320E3DB51A6374 /* GJJson.podspec */,
+				E8313F2A29B998B400A549FD /* GJJson.h */,
+				E8313F3429B998B500A549FD /* GJFoundation.h */,
+				E8313F3329B998B500A549FD /* GJFoundation.m */,
+				E8313F2629B998B400A549FD /* GJJsonConst.h */,
+				E8313F2729B998B400A549FD /* GJJsonConst.m */,
+				E8313F3129B998B400A549FD /* GJProperty.h */,
+				E8313F2229B998B400A549FD /* GJProperty.m */,
+				E8313F2B29B998B400A549FD /* GJPropertyKey.h */,
+				E8313F2429B998B400A549FD /* GJPropertyKey.m */,
+				E8313F3229B998B500A549FD /* GJPropertyType.h */,
+				E8313F2129B998B400A549FD /* GJPropertyType.m */,
+				E8313F2C29B998B400A549FD /* NSObject+GJClass.h */,
+				E8313F3029B998B400A549FD /* NSObject+GJClass.m */,
+				E8313F2529B998B400A549FD /* NSObject+GJCoding.h */,
+				E8313F2D29B998B400A549FD /* NSObject+GJCoding.m */,
+				E8313F2F29B998B400A549FD /* NSObject+GJKeyValue.h */,
+				E8313F2E29B998B400A549FD /* NSObject+GJKeyValue.m */,
+				E8313F2829B998B400A549FD /* NSObject+GJProperty.h */,
+				E8313F2029B998B400A549FD /* NSObject+GJProperty.m */,
+				E8313F2929B998B400A549FD /* NSString+GJJson.h */,
+				E8313F2329B998B400A549FD /* NSString+GJJson.m */,
 				1A749C80127043A5961E0485 /* README.md */,
 				E6CBC93E38EE7863639715D4 /* LICENSE */,
 			);
@@ -193,7 +250,6 @@
 				1F3DC4AD5512C02EA30DD5EE /* Pods-GJJson_Tests.debug.xcconfig */,
 				29B73152034C60C8B573CD63 /* Pods-GJJson_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -255,7 +311,7 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "GJJson" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -364,9 +420,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88DE18829B9B28B009D3D29 /* NSObject+GJCoding.m in Sources */,
+				E88DE18429B9B27D009D3D29 /* GJProperty.m in Sources */,
+				E88DE18929B9B28E009D3D29 /* NSObject+GJKeyValue.m in Sources */,
+				E88DE18A29B9B291009D3D29 /* NSObject+GJProperty.m in Sources */,
+				E88DE18529B9B281009D3D29 /* GJPropertyKey.m in Sources */,
 				6003F59E195388D20070C39A /* GJAppDelegate.m in Sources */,
+				E88DE18B29B9B295009D3D29 /* NSString+GJJson.m in Sources */,
 				6003F5A7195388D20070C39A /* GJViewController.m in Sources */,
+				E8313F3729B998EC00A549FD /* GJTestModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				E88DE18629B9B284009D3D29 /* GJPropertyType.m in Sources */,
+				E88DE18729B9B287009D3D29 /* NSObject+GJClass.m in Sources */,
+				E88DE18329B9B27A009D3D29 /* GJJsonConst.m in Sources */,
+				E88DE18229B9B275009D3D29 /* GJFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +564,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJJson/GJJson-Prefix.pch";
 				INFOPLIST_FILE = "GJJson/GJJson-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +581,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJJson/GJJson-Prefix.pch";
 				INFOPLIST_FILE = "GJJson/GJJson-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
