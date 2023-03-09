@@ -98,7 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param keyValues 字典(可以是NSDictionary、NSData、NSString)
  *  @param context   CoreData上下文
  */
-- (instancetype)gj_setKeyValues:(id)keyValues context:(NSManagedObjectContext *)context;
+- (instancetype)gj_setKeyValues:(id)keyValues context:(NSManagedObjectContext * __nullable)context;
 
 /**
  *  将模型转成字典
@@ -131,7 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param context   CoreData上下文
  *  @return 新建的对象
  */
-+ (instancetype)gj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context;
++ (instancetype)gj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext * __nullable)context;
 
 /**
  *  通过plist来创建一个模型
@@ -161,7 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param context        CoreData上下文
  *  @return 模型数组
  */
-+ (NSMutableArray *)gj_objectArrayWithKeyValuesArray:(id)keyValuesArray context:(NSManagedObjectContext *)context;
++ (NSMutableArray *)gj_objectArrayWithKeyValuesArray:(id)keyValuesArray context:(NSManagedObjectContext * __nullable)context;
 
 /**
  *  通过plist来创建一个模型数组

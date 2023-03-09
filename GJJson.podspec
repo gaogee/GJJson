@@ -26,7 +26,7 @@ TODO: Convenient and nonintrusive conversion framework between JSON and model.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gaogee' => 'gaoju_os@163.com' }
   s.source           = { :git => 'https://github.com/gaogee/GJJson.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://www.zhihu.com/people/flutter-45-53<gaogee>'
+  s.social_media_url = 'https://www.zhihu.com/people/flutter-45-53'
 
   s.ios.deployment_target = '11.0'
 
