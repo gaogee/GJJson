@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GJJson'
   s.version          = '0.0.1'
-  s.summary          = 'convenient and nonintrusive conversion framework between JSON and model.'
+  s.summary          = 'Convenient and nonintrusive conversion framework between JSON and model.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gaogee' => 'gaoju_os@163.com' }
   s.source           = { :git => 'https://github.com/gaogee/GJJson.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.zhihu.com/people/flutter-45-53<gaogee>'
 
   s.ios.deployment_target = '11.0'
 
