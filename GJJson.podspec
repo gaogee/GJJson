@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GJJson'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'The transformation framework between JSON and model.'
 
 # This description is used to generate tags and improve search results.
