@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GJJson'
   s.version          = '0.0.1'
-  s.summary          = 'Convenient and nonintrusive conversion framework between JSON and model.'
+  s.summary          = 'The transformation framework between JSON and model.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: Convenient and nonintrusive conversion framework between JSON and model.
                        DESC
 
   s.homepage         = 'https://github.com/gaogee/GJJson'
